@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title"> Feedback Survey </h1>
+      <p id="description"> We would love to hear from you!</p>
+  <div class="container">
+      
+      <form id="survey-form" action="" method="get">
+          <div class="input-block block">
+            <label for="name" id="name-label" > Name: </label>
+            <input id="name" type="text" placeholder="Surname, First name" class="form-control">
+          </div>
+          <div class="input-block block">
+            <label for="email" id="email-label"> E-mail:</label>
+            <input id="email" type="email" placeholder="example@mail.com" class="form-control">
+         </div>
+         <div class="input-block block">
+            <label for="Age" id="number-label"> age:</label>
+            <input id="age" type="number" min="1" max="110" placeholder="18" class="form-control">
+         </div>
+         <div class="input-block block">
+            <label for="dropdown"> How did you hear about this website?:</label>
+            <select name="dropdown" id="dropdown" > 
+                <option value="none" >--select--</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Advertising">Advertising</option>
+                <option value="Search Engine">Search Engine</option>
+                <option value="Friend">Friend</option>
+                <option value="Other">Other</option>
+            </select>
+         </div>
+         <div class="input-block">
+            <p> What type of content you'd wish to receive from us?</p>
+             <div id="checkbox">
+    
+                <div class="checkbox-field">    
+            <label>
+             <input type="checkbox" name="content" id="newsletter" value="newsletter"/>
+             Newsletters with rich content
+            </label>
+            <br>
+            </div>
+            
+            <div class="checkbox-field">
+             <input type="checkbox" name="content" id="articles" value="articles">
+             <label for="articles">Product articles which can improve my knowledge of your service</label>
+             <br>
+             </div>
+             <div class="checkbox-field">
+             <input type="checkbox" name="content" id="case-studies" value="case-studies">
+             <label for="case-studies">Inspiring customer case studies</label>
+             <br>
+             </div>
+             <div class="checkbox-field">
+             <input type="checkbox" name="content" id="webinars" value="webinars">
+             <label for="webinars">Webinars which can touch particularly difficult use-cases</label>
+             </div>
+            </div>
+
+         </div>
+         <div class="input-block" id="radio">
+             <p>Rate your overall experience:</p>
+             <div class="choices">
+            <label>
+             <input id="very-satisfied"  value="very-satisfied"name="experience" type="radio"/>
+              Very Satisfied </label>
+              <label>
+            <input id="satisfied" value="satisfied" name="experience" type="radio">
+             Satisfied </label>
+             <label>
+            <input id="neutral" value="neutral"name="experience" type="radio">
+             Neutral </label>
+             <label>
+            <input id="unsatisfied" value="unsatisfied" name="experience" type="radio">
+             Unsatisfied </label>
+             <label></label>
+            <input id="very-unsatisfied" value="very-unsatisfied" name="experience" type="radio">
+        Very Unsatisfied </label>
+        </div>
+         </div>
+         <div class="input-block block">
+             <p>Additional Comments:</p>
+             <textarea name="comments" id="comments" cols="30" rows="10" class="form-control"></textarea>
+         </div>
+         <div id="submit-button">
+         <button id="submit"> Submit</button>
+        </div>
+      </form>
+
+  </div> 
+  <div id="footnote">
+      Designed & coded by <a href="https://github.com/sansrien"> sansrien</a>
+  </div>
+</body>
+</html>
